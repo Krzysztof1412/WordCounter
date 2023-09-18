@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@400;500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 213, 177);
+}
+
+main {
+  margin: auto;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+textarea {
+  width: 100%;
+  height: 400px;
+  resize: none;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-family: 'Noto Serif', serif;
+  border-radius: 10px;
+  outline: none;
+  border-color: rgb(255, 200, 152);
+  box-shadow: 0 0 0 20px rgb(255, 189, 132);
+}
+
+p.text-info {
+  font-size: 2rem;
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+  main {
+    width: 90vw;
+  }
+}
+
+@media (max-height: 700px) {
+  textarea {
+    height: 200px;
+  }
+}
